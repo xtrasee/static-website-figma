@@ -10,7 +10,7 @@ body{
 
 @font-face {
     font-family: 'Poppins';
-    src: url(/Poppins/Poppins-Thin.ttf);
+    src: url(/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
@@ -24,26 +24,8 @@ body{
     display: table;
 }
 
-/* created grid view */
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
-  
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+/* nav bar styling */
 
-/* navBar */
 .nav{
     list-style-type: none;
     overflow: hidden;
@@ -53,7 +35,7 @@ body{
     width: 100%
 }
 
-li{
+.nav li{
     margin-right: 4rem;
     float: left;
     margin-top: 2rem;
@@ -95,14 +77,20 @@ li{
 
 /* listings */
 
+.greyRow{
+    border: 1px solid #4D4D4D;
+    opacity: 0.2;
+    margin-top: 4em;
+    margin-bottom: 15px;
+}
+
 .listings ul{
     list-style-type: none;
     overflow: hidden;
-    position: fixed;
     display: flex;
-    justify-content: center;
-    margin-left: 9.5em;
-    gap: 0.2em;
+    width: 75%;
+    margin-left:13%;
+
 }
 
 .listings li{
@@ -111,45 +99,72 @@ li{
     font-size:18px;
     font-style: italic;
     font-weight: 400;
-    display: inline-block;
-    text-align: center;
     width: 100%;
-    border: 1px solid red;
-    z-index: 1;
+    padding-left: 1em;
 }
 
 .listings img{
     display: flex;
     justify-content: center;
-    gap: 02em;
-    border: 1px solid red;
 }
 
 /* cards */
+.row{
+    margin-top: 5em;
+}
+
+.articles{
+    margin-left: 10em;
+}
 
 div.card{
-    margin-top: 5em;
-    border-radius: 22px;
-    border: 1px solid #252930;
-    width: 32%;
-    height: 35%;
-    background-color: #FFF;
-    padding: 2em 4em 1em 2em;
-    display: inline-block;
+    display:block;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 25%;
+    height: 25em;
+    background-color: #fff;
+    float: left;
     text-align: left;
+    border-radius: 22px;
+    padding: 1em;
+    position: relative;
+}
+
+div.card img{
+    padding: .5em .2em;
+    width: 100%;
+    height: auto;
 }
 
 div.cardTitle{
     font-family: Poppins-Bold;
-    padding-top: 1.5em;
+    padding-top: 1.8m;
+
 }
 
 div.container{
     font-family: Poppins;
-    padding-top: 1em;
+    padding-top: .8em;
 }
+
+/* footer */
 
 div.cardFooter{
     font-family: Poppins;
-    padding-top: 2em;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1em;
+}
+
+ul.footer{
+    list-style-type: none;
+}
+
+.footer li {
+    font-family: Poppins;
+    color: black;
+    margin-right: 4rem;
+    float: left;
 }
