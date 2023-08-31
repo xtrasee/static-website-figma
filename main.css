@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     background-color: #232830;
 }
 
@@ -10,12 +13,37 @@
     src: url(/Poppins/Poppins-Thin.ttf);
 }
 
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(/Poppins/Poppins-SemiBold.ttf);
+}
+
 .class::after{
     content:"";
     clear:both;
     display: table;
 }
 
+/* created grid view */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* navBar */
 .nav{
     list-style-type: none;
     overflow: hidden;
@@ -73,7 +101,7 @@ li{
     position: fixed;
     display: flex;
     justify-content: center;
-    margin-left: 18.5em;
+    margin-left: 9.5em;
     gap: 0.2em;
 }
 
@@ -87,6 +115,7 @@ li{
     text-align: center;
     width: 100%;
     border: 1px solid red;
+    z-index: 1;
 }
 
 .listings img{
@@ -94,4 +123,33 @@ li{
     justify-content: center;
     gap: 02em;
     border: 1px solid red;
+}
+
+/* cards */
+
+div.card{
+    margin-top: 5em;
+    border-radius: 22px;
+    border: 1px solid #252930;
+    width: 32%;
+    height: 35%;
+    background-color: #FFF;
+    padding: 2em 4em 1em 2em;
+    display: inline-block;
+    text-align: left;
+}
+
+div.cardTitle{
+    font-family: Poppins-Bold;
+    padding-top: 1.5em;
+}
+
+div.container{
+    font-family: Poppins;
+    padding-top: 1em;
+}
+
+div.cardFooter{
+    font-family: Poppins;
+    padding-top: 2em;
 }
