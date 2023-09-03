@@ -51,8 +51,11 @@ body{
 /* heading */
 
 .heading img{
-    margin-left: 40.5em;
     margin-top: 5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
 }
 
 .heading h1{
@@ -95,7 +98,7 @@ body{
 
 .listings li{
     color: #909090;
-    font-family: Recursive;
+    font-family: 'Recursive';
     font-size:18px;
     font-style: italic;
     font-weight: 400;
@@ -118,7 +121,7 @@ body{
 }
 
 div.card{
-    display:block;
+    display: block;
     margin-top: 2em;
     margin-left: 2em;
     width: 25%;
@@ -148,7 +151,7 @@ div.container{
     padding-top: .8em;
 }
 
-/* footer */
+/* card footer */
 
 div.cardFooter{
     font-family: Poppins;
@@ -167,4 +170,39 @@ ul.footer{
     color: black;
     margin-right: 4rem;
     float: left;
+}
+
+/* pagination */
+
+.pagination p{
+    color: #909090;
+    font-style: italic;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    padding-top: 6em;
+    font-family: 'Recursive';
+}
+
+.pagination{
+    display: inline-block;
+}
+
+.center{
+    text-align: center;
+}
+
+.webFooter{
+    float: left;
+}
+
+.author{
+    background-color: #4699E0;
+    border-radius: 5px;
+}
+
+.twitter{
+    background-color: #4699E0;
+    border-radius: 5px;
+    float: right;
 }
