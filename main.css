@@ -8,14 +8,21 @@ body{
     background-color: #232830;
 }
 
+/* fonts */
+
 @font-face {
     font-family: 'Poppins';
-    src: url(/Poppins/Poppins-Light.ttf);
+    src: url(/fonts/Poppins/Poppins-Light.ttf);
 }
 
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url(/Poppins/Poppins-SemiBold.ttf);
+    src: url(/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(/fonts/source-sans-pro/SourceSansPro-Regular.otf);
 }
 
 .class::after{
@@ -93,7 +100,6 @@ body{
     display: flex;
     width: 75%;
     margin-left:13%;
-
 }
 
 .listings li{
@@ -132,6 +138,7 @@ div.card{
     border-radius: 22px;
     padding: 1em;
     position: relative;
+    overflow: scroll;
 }
 
 div.card img{
@@ -192,17 +199,41 @@ ul.footer{
     text-align: center;
 }
 
+/* webFooter */
+
 .webFooter{
-    float: left;
+    width: 35%;
+    color: white;
+    padding: 3em;
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    margin-bottom: 20em;
+    padding-left: 10em;
+    width: 50%;
+    padding-bottom: 5em;;
 }
 
-.author{
+.webFooter span {
     background-color: #4699E0;
     border-radius: 5px;
+    padding: 0.25em;
+    font-size: 14px;
+    margin-left: 0.5em;
 }
 
 .twitter{
     background-color: #4699E0;
     border-radius: 5px;
+    color: white;
+    display: block;
     float: right;
+    font-family: 'Source Sans Pro';
+    font-size: 14px;
+    margin-right: 9em;
+    padding: 0.25em;
+    margin-top: 0.35em;
 }
